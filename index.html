@@ -16,19 +16,25 @@
             <header class="header">
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item"> <a class="nav-link" href="#">Для мужчин</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#">Для женщин</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="#">Для детей</a></li> 
+                        <li class="nav-item"><a  class="nav-link" href="">Для мужчин</a></li>
+                        <li class="nav-item"><a  class="nav-link" href="">Для женщин</a></li>
+                        <li class="nav-item"><a  class="nav-link" href="">Для детей</a></li>
                     </ul>
                 </nav>
-            <img src="img/logo.svg" alt="logo">
-            <ul class="nav">
-                <li class="nav-item"> <a class="nav-link" href="#">Оплата</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Доставка</a></li>
-            </ul>
-            <div class="cart">
-                <span class="cart-count">5</span>
-            </div>
+                <img class="header-logo" src="img/logo.svg" alt="Logo">
+                <ul class="nav nav-info">
+                    <li class="nav-item"><a  class="nav-link" href="">Оплата</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Доставка</a></li>
+                </ul>
+                <button class="cart">
+                    <span class="cart-count">5</span>
+                </button>
+                <div class="toggle-menu">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+                
             </header>
         </div>
     </div>
@@ -123,7 +129,7 @@
                     <li class="footer-list-item"><a class="footer-list-link" href="">Дл животных</a></li>
                 </ul>
                 <ul class="footer-list">
-                    <li class="footer-list-item footer-list-title">Полнзные ссылки</li>
+                    <li class="footer-list-item footer-list-title">Полезные ссылки</li>
                     <li class="footer-list-item"><a class="footer-list-link" href="">Таблица размеров</a></li>
                     <li class="footer-list-item"><a class="footer-list-link" href="">Блог о моде</a></li>
                     <li class="footer-list-item"><a class="footer-list-link" href="">Наша миссия</a></li>
@@ -133,13 +139,33 @@
                     <li class="footer-list-item"><a class="footer-list-link" href=""><i class="zmdi zmdi-vk"></i>VK.com</a></li>
                     <li class="footer-list-item"><a class="footer-list-link" href=""><i class="zmdi zmdi-facebook-box"></i></i>Facebook</a></li>
                     <li class="footer-list-item"><a class="footer-list-link" href=""><i class="zmdi zmdi-instagram"></i>Instagram</a></li>
-
                 </ul>
             </div>
-
         </footer>
     </div>
 </div>
+<div class="wrapper">
+    <div class="footer-bottom">
+        <p class="footer-bottom-copyright">Copyright © 2021. Все права защищены</p>
+        <a href="#" class="footer-bottom-link">Политика приватности</a>
+    </div>
+</div>
+<div class="nav-bar">
+    <ul class="nav-list">
+        <li class="nav-list-item"><a href="" class="nav-link">Для мужчин</a></li>
+        <li class="nav-list-item"><a href="" class="nav-link">Для женщин</a></li>
+        <li class="nav-list-item"><a href="" class="nav-link">Для детей</a></li>
+        <li class="nav-list-item"><a href="" class="nav-link">Оплата</a></li>
+        <li class="nav-list-item"><a href="" class="nav-link">Доставка</a></li>
+    </ul>
+</div>
+<script>
+    var toggleButton = document.querySelector('.toggle-menu');
+    var navBar = document.querySelector('.nav-bar');
+    toggleButton.addEventListener('click', function () {
+        navBar.classList.toggle('toggle');
+    });
+</script>
 </body>
 </html>
 
